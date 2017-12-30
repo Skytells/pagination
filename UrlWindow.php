@@ -1,22 +1,22 @@
 <?php
 
-namespace Illuminate\Pagination;
+namespace Skytells\Pagination;
 
-use Illuminate\Contracts\Pagination\LengthAwarePaginator as PaginatorContract;
+use Skytells\Contracts\Pagination\LengthAwarePaginator as PaginatorContract;
 
 class UrlWindow
 {
     /**
      * The paginator implementation.
      *
-     * @var \Illuminate\Contracts\Pagination\LengthAwarePaginator
+     * @var \Skytells\Contracts\Pagination\LengthAwarePaginator
      */
     protected $paginator;
 
     /**
      * Create a new URL window instance.
      *
-     * @param  \Illuminate\Contracts\Pagination\LengthAwarePaginator  $paginator
+     * @param  \Skytells\Contracts\Pagination\LengthAwarePaginator  $paginator
      * @return void
      */
     public function __construct(PaginatorContract $paginator)
@@ -27,7 +27,7 @@ class UrlWindow
     /**
      * Create a new URL window instance.
      *
-     * @param  \Illuminate\Contracts\Pagination\LengthAwarePaginator  $paginator
+     * @param  \Skytells\Contracts\Pagination\LengthAwarePaginator  $paginator
      * @param  int  $onEachSide
      * @return array
      */

@@ -1,8 +1,8 @@
 <?php
 
-namespace Illuminate\Pagination;
+namespace Skytells\Pagination;
 
-use Illuminate\Support\ServiceProvider;
+use Skytells\Support\ServiceProvider;
 
 class PaginationServiceProvider extends ServiceProvider
 {

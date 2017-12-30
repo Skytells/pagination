@@ -1,16 +1,16 @@
 <?php
 
-namespace Illuminate\Pagination;
+namespace Skytells\Pagination;
 
 use Countable;
 use ArrayAccess;
 use JsonSerializable;
 use IteratorAggregate;
-use Illuminate\Support\Collection;
-use Illuminate\Support\HtmlString;
-use Illuminate\Contracts\Support\Jsonable;
-use Illuminate\Contracts\Support\Arrayable;
-use Illuminate\Contracts\Pagination\LengthAwarePaginator as LengthAwarePaginatorContract;
+use Skytells\Support\Collection;
+use Skytells\Support\HtmlString;
+use Skytells\Contracts\Support\Jsonable;
+use Skytells\Contracts\Support\Arrayable;
+use Skytells\Contracts\Pagination\LengthAwarePaginator as LengthAwarePaginatorContract;
 
 class LengthAwarePaginator extends AbstractPaginator implements Arrayable, ArrayAccess, Countable, IteratorAggregate, JsonSerializable, Jsonable, LengthAwarePaginatorContract
 {
@@ -71,7 +71,7 @@ class LengthAwarePaginator extends AbstractPaginator implements Arrayable, Array
      *
      * @param  string|null  $view
      * @param  array  $data
-     * @return \Illuminate\Support\HtmlString
+     * @return \Skytells\Support\HtmlString
      */
     public function links($view = null, $data = [])
     {
@@ -83,7 +83,7 @@ class LengthAwarePaginator extends AbstractPaginator implements Arrayable, Array
      *
      * @param  string|null  $view
      * @param  array  $data
-     * @return \Illuminate\Support\HtmlString
+     * @return \Skytells\Support\HtmlString
      */
     public function render($view = null, $data = [])
     {

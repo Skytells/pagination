@@ -1,21 +1,21 @@
 <?php
 
-namespace Illuminate\Pagination;
+namespace Skytells\Pagination;
 
 use Closure;
-use Illuminate\Support\Str;
-use Illuminate\Support\Collection;
-use Illuminate\Contracts\Support\Htmlable;
+use Skytells\Support\Str;
+use Skytells\Support\Collection;
+use Skytells\Contracts\Support\Htmlable;
 
 /**
- * @mixin \Illuminate\Support\Collection
+ * @mixin \Skytells\Support\Collection
  */
 abstract class AbstractPaginator implements Htmlable
 {
     /**
      * All of the items being paginated.
      *
-     * @var \Illuminate\Support\Collection
+     * @var \Skytells\Support\Collection
      */
     protected $items;
 
@@ -407,7 +407,7 @@ abstract class AbstractPaginator implements Htmlable
     /**
      * Get an instance of the view factory from the resolver.
      *
-     * @return \Illuminate\Contracts\View\Factory
+     * @return \Skytells\Contracts\View\Factory
      */
     public static function viewFactory()
     {
@@ -490,7 +490,7 @@ abstract class AbstractPaginator implements Htmlable
     /**
      * Get the paginator's underlying collection.
      *
-     * @return \Illuminate\Support\Collection
+     * @return \Skytells\Support\Collection
      */
     public function getCollection()
     {
@@ -500,7 +500,7 @@ abstract class AbstractPaginator implements Htmlable
     /**
      * Set the paginator's underlying collection.
      *
-     * @param  \Illuminate\Support\Collection  $collection
+     * @param  \Skytells\Support\Collection  $collection
      * @return $this
      */
     public function setCollection(Collection $collection)
